@@ -1,1 +1,283 @@
+D's Portfolio :)
+#HTML:------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Dev</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home" class="section">
+        <div class="hero-content">
+            <h2>Hi, I'm a <span class="highlight">Full Stack Developer</span></h2>
+            <p>Crafting interactive and efficient web applications with passion.</p>
+            <button class="cta-btn">Explore My Work</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-photo"></div>
+            <i><h3>I am a passionate Full Stack Developer with a knack for transforming complex challenges into seamless digital solutions. With expertise in both front-end and back-end technologies, I excel at building dynamic, user-focused web applications that deliver exceptional user experiences. My journey is driven by a commitment to innovation, leveraging modern frameworks like Laravel and React to create scalable and efficient systems.
+
+                With a strong foundation in PHP, JavaScript, and RESTful APIs, I bring a balanced perspective to both client-side and server-side development. I thrive in collaborative environments and have a deep understanding of database management, cloud integration, and responsive design principles.
+                
+                Whether it’s crafting intuitive UI components or architecting robust server-side logic, I am dedicated to delivering code that is clean, maintainable, and optimized for performance. Let’s build something extraordinary together.</h3></i>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <div class="skill-card">PHP & Laravel</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">HTML5 & CSS3</div>
+            <div class="skill-card">MySQL & Database Design</div>
+            <div class="skill-card">OOPs</div>
+            <div class="skill-card">Excel</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project 1 - E-commerce Platform</h3>
+                <p>Built a comprehensive e-commerce site using Laravel, featuring user authentication, product management, and a shopping cart system.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2 - Blogging Platform</h3>
+                <p>A blogging platform with a custom CMS built using Laravel and Vue.js, allowing users to post, edit, and manage articles.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3 - Real-time Chat Application</h3>
+                <p>Developed a real-time chat app using Node.js and Socket.io, providing seamless communication between users.</p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Project 4 - Web Authantication </h3>
+                <p>Developed a system that verifies user identities and controls access to specific features of a web application.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 5 - Admin penal </h3>
+                <p>a graphical user interface (GUI) that allows users to perform CRUD (create, read, update, and delete) operations on a relational database.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <h2>Contact No. : +91 9785763681 </h2>
+            <h2>Email : Devendrasingh982001@gmail.com</h2>
+        </form>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+#CSS :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+/* Global Styles */
+.logo{ font-size: 50px;}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #1a237e;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f44336;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(135deg, #ff9800, #f44336);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+}
+
+.highlight {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientText 5s infinite;
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    background: url('profile.jpg') center/cover no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.skill-card, .project-card {
+    background: #212121;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    background: #424242;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+form input, form textarea {
+    padding: 10px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+form button {
+    background-color: #ff9800;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #f44336;
+}
+
+footer {
+    background: #0d47a1;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+#JS :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const feedback = document.getElementById('feedback');
+
+    feedback.textContent = '';
+
+    if (!name || !email || !message) {
+        feedback.textContent = 'Please fill out all fields.';
+        feedback.style.color = '#ff3d00';
+        return;
+    }
+
+    if (!isValidEmail(email)) {
+        feedback.textContent = 'Please enter a valid email address.';
+        feedback.style.color = '#ff3d00';
+        return;
+    }
+
+    feedback.textContent = 'Sending...';
+    feedback.style.color = '#ff9800';
+
+    setTimeout(() => {
+        feedback.textContent = `Thank you, ${name}! I'll be in touch soon.`;
+        feedback.style.color = '#4caf50';
+        document.getElementById('contactForm').reset();
+    }, 2000);
+});
+
+function isValidEmail(email) {}
